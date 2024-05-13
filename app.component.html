@@ -1,0 +1,8 @@
+<h1>This is Our First Angular Project !</h1>
+<h1>We Know Things About html and css , Ok</h1>
+
+<app-first [item]="currentItem" (event)="addNewItem($event)"></app-first>
+
+<ul>
+    <li *ngFor="let itemd of items">{{itemd}}</li>
+</ul>
