@@ -1,22 +1,47 @@
-<div class="container">
-  <div class="row">
-    <h1>Welcome To Dashboard !</h1>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <h2>Hi, This is Angular Frontend </h2>
-    
-    
-    <div>
-        <mat-card class="example-card" appearance="outlined">
+<div class="container" style="background-color: aliceblue;">
+  <div class="row">
+    <h1 style="text-align: center;margin-top: 20px; padding-top: 10px;"><i>Welcome To Dashboard !</i></h1>
+    <nav>
+
+    </nav>
+
+    <h2>Hi, This is our welcome page , check out the different topics !</h2>
+    <div class="col-sm-6">
+        <mat-card class="example-card" onmouseover="this.style.size='200px';" appearance="outlined">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
+              <img mat-card-image src="../assets/img/images.png" alt="Photo of Angular" style="height:100px;width: 200px">
               <mat-card-title>Angular</mat-card-title>
               <mat-card-subtitle>Typescript Framework</mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="../assets/img/images.png" alt="Photo of Angular" style="height:100px;width: 200px">
             <mat-card-content>
               <p>
                 Angular a Framework used to create frontend Applications. We can proceed by Installation of Angular from its 
                 official Site. Then Using "ng new 'Project'" name we can create an Angular Project.
+              </p>
+            </mat-card-content>
+            
+            <mat-card-actions>
+              <a mat-raised-button type="submit"class="btn btn-primary" ng-click="onLike()">LIKE</a>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+          </div>
+          <div class="col-sm-6">
+          <mat-card class="example-card" appearance="outlined">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <img mat-card-image src="../assets/img/spring-framework.png" alt="Photo of Spring" style="height:100px;width: 200px">
+              <mat-card-title>Spring Framework</mat-card-title>
+              <mat-card-subtitle>Java Framework</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+                Spring a Framework used to create backend Applications. We can proceed by Installation of JDK for Java from its 
+                official Site. Then Using spring modules from the spring site.
               </p>
             </mat-card-content>
             <mat-card-actions>
@@ -24,7 +49,97 @@
               <button mat-button>SHARE</button>
             </mat-card-actions>
           </mat-card>
-          
-    </div>    
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="cols-sm-6">
+            <mat-card class="example-card" appearance="outlined">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <img mat-card-image src="../assets/img/springboot.png" alt="Photo of Spring" style="height:100px;width: 200px">
+                <mat-card-title>Spring boot Framework</mat-card-title>
+                <mat-card-subtitle>Java Framework</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <p>
+                  Spring Boot a Java Framework which extends the Spring and Spring Boot is an extension of Spring that aims to make the development process easier by providing default configurations and embedded servers.
+                  Also used to create backend Applications. We can proceed by Installation of JDK for Java from its 
+                  official Site. Then Using spring website we can add modules, some dependencies with Java version, package and name of the project from the spring website.
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>          
+    </div> 
+    lll   
+    <div class="row">
+      <div class="col-sm-6">
+          <mat-card class="example-card" appearance="outlined">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <img mat-card-image src="../assets/img/images.png" alt="Photo of Angular" style="height:100px;width: 200px">
+                <mat-card-title>Django</mat-card-title>
+                <mat-card-subtitle>Python Framework</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <p>
+                  Django a pyton web Framework used for creating web Applications. We can proceed by Installation of python from its 
+                  official website. It's free and open source.
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+            </mat-card>
+            </div>
+            <div class="col-sm-6">
+            <mat-card class="example-card" appearance="outlined">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <img mat-card-image src="../assets/img/spring-framework.png" alt="Photo of Spring" style="height:100px;width: 200px">
+                <mat-card-title>Spring Framework</mat-card-title>
+                <mat-card-subtitle>Java Framework</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <p>
+                  Spring a Framework used to create backend Applications. We can proceed by Installation of JDK for Java from its 
+                  official Site. Then Using spring modules from the spring site.
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+            </mat-card>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="cols-sm-6">
+              <mat-card class="example-card" appearance="outlined">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <img mat-card-image src="../assets/img/springboot.png" alt="Photo of Spring" style="height:100px;width: 200px">
+                  <mat-card-title>Spring boot Framework</mat-card-title>
+                  <mat-card-subtitle>Java Framework</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>
+                    Spring Boot a Java Framework which extends the Spring and Spring Boot is an extension of Spring that aims to make the development process easier by providing default configurations and embedded servers.
+                    Also used to create backend Applications. We can proceed by Installation of JDK for Java from its 
+                    official Site. Then Using spring website we can add modules, some dependencies with Java version, package and name of the project from the spring website.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>          
+      </div>
   </div>
-</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
